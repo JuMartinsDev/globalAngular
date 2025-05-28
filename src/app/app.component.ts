@@ -4,6 +4,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ParceirosComponent } from './components/parceiros/parceiros.component';
 import { ProgramacaoComponent } from './components/programacao/programacao.component';
 import { EventoCardComponent } from './components/evento-card/evento-card.component';
+import { HoverBorderDirective } from './hover-border.directive';
 
 
 @Component({

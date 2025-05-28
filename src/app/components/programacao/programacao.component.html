@@ -1,5 +1,5 @@
 <!-- Card de Evento -->
-<div *ngFor="let evento of eventos" class="evento-card">
+<div *ngFor="let evento of eventos" class="evento-card" [appHoverBorder]="'#ec407a'">
   <h3>{{ evento.titulo }}</h3>
   <p>Data: {{ evento.data }}</p>
   <p>Horário: {{ evento.horario }}</p>
