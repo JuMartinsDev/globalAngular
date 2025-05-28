@@ -1,0 +1,13 @@
+<!-- Card de Evento -->
+<div *ngFor="let evento of eventos" class="evento-card">
+  <h3>{{ evento.titulo }}</h3>
+  <p>Data: {{ evento.data }}</p>
+  <p>Horário: {{ evento.horario }}</p>
+  <p>Local: {{ evento.local }}</p>
+
+  <!-- Botão Participar -->
+  <button (click)="participarEvento(evento)">Participar</button>
+
+  <!-- Mensagem de Inscrição -->
+  <p *ngIf="evento.mensagemInscricao">{{ evento.mensagemInscricao }}</p>
+</div>

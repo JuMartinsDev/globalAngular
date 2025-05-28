@@ -1,0 +1,33 @@
+.evento-card {
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.evento-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+  color: #ec407a;
+}
+
+/* Estilo para os links, se necessário */
+a {
+  color: #ec407a;
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.1em;
+  color: #333;
+}
+
+strong {
+  font-weight: bold;
+}

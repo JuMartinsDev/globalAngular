@@ -1,0 +1,77 @@
+/* Estilos do componente Home */
+
+/* Cor de fundo rosa claro */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8bbd0; /* Rosa claro */
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+div {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff; /* Fundo branco para contraste */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #ec407a; /* Rosa escuro */
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2em;
+  color: #555;
+  line-height: 1.6;
+}
+
+strong {
+  color: #ec407a; /* Rosa escuro */
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  font-size: 1.1em;
+  color: #ec407a; /* Rosa escuro */
+  padding: 8px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+/* Estilos para as seções condicionalmente exibidas */
+div[ng-reflect-ng-if="true"] {
+  background-color: #f1c4d6; /* Rosa suave para evento ativo */
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+div[ng-reflect-ng-if="false"] {
+  background-color: #f1f8e9; /* Verde suave para evento não iniciado */
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+/* Estilo para os links, se necessário */
+a {
+  color: #ec407a;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

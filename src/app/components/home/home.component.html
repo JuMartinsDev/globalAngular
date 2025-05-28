@@ -1,0 +1,59 @@
+<!-- Componente Home -->
+<div>
+  <!-- Título dinâmico -->
+  <h1>{{ titulo }}</h1>
+
+  <!-- Descrição dinâmica -->
+  <p>{{ descricao }}</p>
+
+  <!-- Data do Evento -->
+  <p><strong>Data do Evento:</strong> {{ dataEvento }}</p>
+
+  <!-- Condicional para exibir ou ocultar informações -->
+  <div *ngIf="isEventoAtivo">
+    <p>O evento está ativo! Prepare-se!</p>
+  </div>
+  <div *ngIf="!isEventoAtivo">
+    <p>O evento ainda não começou.</p>
+  </div>
+
+  <!-- Lista de Destaques -->
+  <h2>Destaques do Evento</h2>
+  <ul>
+    <li *ngFor="let destaque of destaques">
+      {{ destaque }}
+    </li>
+  </ul>
+</div>
+
+<script>
+export default {
+  data() {
+    return {
+      titulo: 'Global Solution',
+      descricao: 'Uma jornada tecnológica rumo ao futuro.',
+      dataEvento: '26 de maio',
+      isEventoAtivo: true, // Condição para exibir ou ocultar o evento
+      destaques: ['Inovação', 'Tecnologia', 'Impacto Social'] // Lista de destaques
+    };
+  }
+};
+</script>
+
+<style scoped>
+/* Estilos específicos para o componente */
+h1 {
+  font-size: 2em;
+  color: #333;
+}
+p {
+  font-size: 1.2em;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+li {
+  font-size: 1.1em;
+}
+</style>
